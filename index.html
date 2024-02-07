@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oskar</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-
-</head>
-<body>
-    <nav id="navbar1">
-        <div class="logo">Oskar Bergman</div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Oskar Bergman</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#Om">Om</a></li>
+          <li><a href="#Erfarenhet">Erfarenhet</a></li>
+          <li><a href="#Projekt">Projekt</a></li>
+          <li><a href="#Kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Oskar Bergman</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#Om" onclick="toggleMenu()"">Om</a></li>
+        <li><a href="#Erfarenhet" onclick="toggleMenu()">Erfarenhet</a></li>
+        <li><a href="#Projekt" onclick="toggleMenu()">Projekt</a></li>
+        <li><a href="#Kontakt" onclick="toggleMenu()">Kontakt</a></li>
+      </div>
+      </div>
     </nav>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
